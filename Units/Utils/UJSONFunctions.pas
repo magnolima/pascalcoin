@@ -23,9 +23,8 @@ Uses
 {$IFDEF FPC}
     fpjson, jsonparser,
 {$ELSE}
-    DBXJSON,
+    DBXJSON,System.Json,
 {$ENDIF}
-    System.Json,
     SysUtils, DateUtils, Variants, Classes, ULog;
 
 Type
