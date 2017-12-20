@@ -24,7 +24,7 @@ interface
 
 uses
 {$IFnDEF FPC}
-  pngimage, Windows, AppEvnts, ShlObj,
+  pngimage, Windows, AppEvnts, ShlObj, System.ImageList,
 {$ELSE}
   LCLIntf, LCLType, LMessages,
 {$ENDIF}
@@ -32,7 +32,7 @@ uses
   Dialogs, ExtCtrls, ComCtrls, UWalletKeys, StdCtrls,
   ULog, Grids, UAppParams,
   UBlockChain, UNode, UGridUtils, UAccounts, Menus, ImgList,
-  UNetProtocol, UCrypto, Buttons, UPoolMining, URPC, UFRMAccountSelect, System.ImageList;
+  UNetProtocol, UCrypto, Buttons, UPoolMining, URPC, UFRMAccountSelect;
 
 Const
   CM_PC_WalletKeysChanged = WM_USER + 1;
